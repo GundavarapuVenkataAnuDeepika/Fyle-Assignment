@@ -1,0 +1,82 @@
+/* styles.css */
+.right-image {
+  float: right;
+  margin: 10px;
+  height:500px;
+  width:500px;
+   /* add some margin for spacing */
+}
+.popup-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin: 40px auto;
+    display: none; /* hide the form by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.popup-form.show {
+    display: block; /* show the form when the button is clicked */
+}
+
+.popup-form h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.popup-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-form input[type="email"],
+.popup-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.popup-form .checkbox {
+    margin-bottom: 20px;
+}
+
+.popup-form .checkbox input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.popup-form button[type="submit"] {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-form button[type="submit"]:hover {
+    background-color: #ff7ca3;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.overlay.show {
+    display: block;
+}
